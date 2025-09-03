@@ -2,8 +2,8 @@
 
 # === CONFIG ===
 BACKUP_DIR="./backups"
-DB_CONTAINER="ravipa-db-1"
-WORDPRESS_CONTAINER="ravipa-wordpress-1"
+DB_CONTAINER="db"
+WORDPRESS_CONTAINER="wordpress"
 FILES_DIR="/var/www/html"
 
 # === Load .env ===
