@@ -27,9 +27,10 @@ services:
       - WORDPRESS_DB_PASSWORD=$MYSQL_PASSWORD
       - WORDPRESS_DB_NAME=wordpress
     volumes:
-      - /var/www/ravipa:/var/www/html
+      - ./wordpress:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     ports:
-      - "9001:80"
+      - "$PORT:80"
     networks:
       - app-network
 
